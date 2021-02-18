@@ -7,7 +7,6 @@
 //
 
 import UIKit
-
 extension NSDictionary {
     @objc func getStr(_ pKey:String)->String{
         return getStr(pKey, "")
@@ -73,5 +72,21 @@ extension NSDictionary {
             return num.doubleValue
         }
         return 0.0
+    }
+    func changeToString()->String?{
+        let data = try?JSONSerialization.data(withJSONObject: self, options: .prettyPrinted)
+        if  data != nil {
+            let str = String.init(data: data!, encoding: .utf8)
+            return str
+        }
+        return nil
+    }
+    class func initwithString(_ str:String)->NSDictionary?{
+        let jsonData = str.data(using: .utf8)
+        if jsonData != nil {
+            let dic = try?JSONSerialization.jsonObject(with: jsonData!, options: .mutableContainers)
+            return dic as? NSDictionary
+        }
+        return nil
     }
 }

@@ -5,8 +5,12 @@
         <attribute name="compareDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="isAllData" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="time" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="relationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ServerData" inverseName="relationship" inverseEntity="ServerData"/>
+        <fetchedProperty name="fetchedProperty" optional="YES">
+            <fetchRequest name="fetchedPropertyFetchRequest" entity="ServerData"/>
+        </fetchedProperty>
     </entity>
     <elements>
-        <element name="ServerData" positionX="-63" positionY="-18" width="128" height="89"/>
+        <element name="ServerData" positionX="-63" positionY="-18" width="128" height="125"/>
     </elements>
 </model>

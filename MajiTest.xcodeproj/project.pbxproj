@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4FE658E637378FB485D3EF48 /* libPods-MajiTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5415151A30058C6DD7BBB043 /* libPods-MajiTest.a */; };
+		AD3E271425DE03DA00219812 /* ShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3E271325DE03DA00219812 /* ShowViewController.swift */; };
 		ADA28AE025DA08CA00451852 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA28ADF25DA08CA00451852 /* AppDelegate.swift */; };
 		ADA28AE225DA08CA00451852 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA28AE125DA08CA00451852 /* SceneDelegate.swift */; };
 		ADA28AE425DA08CA00451852 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA28AE325DA08CA00451852 /* ViewController.swift */; };
@@ -105,6 +107,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2DF7CEFF9D1ACBA5238E65A1 /* Pods-MajiTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MajiTest.release.xcconfig"; path = "Target Support Files/Pods-MajiTest/Pods-MajiTest.release.xcconfig"; sourceTree = "<group>"; };
+		3FD3501D681636503A8D4CEA /* Pods-MajiTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MajiTest.debug.xcconfig"; path = "Target Support Files/Pods-MajiTest/Pods-MajiTest.debug.xcconfig"; sourceTree = "<group>"; };
+		5415151A30058C6DD7BBB043 /* libPods-MajiTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MajiTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD3E271325DE03DA00219812 /* ShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowViewController.swift; sourceTree = "<group>"; };
 		ADA28ADC25DA08CA00451852 /* MajiTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MajiTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADA28ADF25DA08CA00451852 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADA28AE125DA08CA00451852 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -197,6 +203,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FE658E637378FB485D3EF48 /* libPods-MajiTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +224,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		83E114B8ED0626DF44E7A063 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3FD3501D681636503A8D4CEA /* Pods-MajiTest.debug.xcconfig */,
+				2DF7CEFF9D1ACBA5238E65A1 /* Pods-MajiTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A775E5F03B8C098098441372 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5415151A30058C6DD7BBB043 /* libPods-MajiTest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		ADA28AD325DA08CA00451852 = {
 			isa = PBXGroup;
 			children = (
@@ -224,6 +248,8 @@
 				ADA28AF825DA08CC00451852 /* MajiTestTests */,
 				ADA28B0325DA08CC00451852 /* MajiTestUITests */,
 				ADA28ADD25DA08CA00451852 /* Products */,
+				83E114B8ED0626DF44E7A063 /* Pods */,
+				A775E5F03B8C098098441372 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -245,6 +271,7 @@
 				ADA28ADF25DA08CA00451852 /* AppDelegate.swift */,
 				ADA28AE125DA08CA00451852 /* SceneDelegate.swift */,
 				ADA28AE325DA08CA00451852 /* ViewController.swift */,
+				AD3E271325DE03DA00219812 /* ShowViewController.swift */,
 				ADA28AE525DA08CA00451852 /* Main.storyboard */,
 				ADA28AEB25DA08CC00451852 /* Assets.xcassets */,
 				ADA28AED25DA08CC00451852 /* LaunchScreen.storyboard */,
@@ -419,6 +446,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ADA28B0925DA08CC00451852 /* Build configuration list for PBXNativeTarget "MajiTest" */;
 			buildPhases = (
+				8F71E9A3EB5B61250A0B81D8 /* [CP] Check Pods Manifest.lock */,
 				ADA28AD825DA08CA00451852 /* Sources */,
 				ADA28AD925DA08CA00451852 /* Frameworks */,
 				ADA28ADA25DA08CA00451852 /* Resources */,
@@ -540,6 +568,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8F71E9A3EB5B61250A0B81D8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MajiTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ADA28AD825DA08CA00451852 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -550,6 +603,7 @@
 				ADB1530925DA9EF4005AD592 /* Misc.swift in Sources */,
 				ADB1533125DA9EF4005AD592 /* extImage.swift in Sources */,
 				ADB1531125DA9EF4005AD592 /* SpringLabel.swift in Sources */,
+				AD3E271425DE03DA00219812 /* ShowViewController.swift in Sources */,
 				ADB1530425DA9EF4005AD592 /* SoundPlayer.swift in Sources */,
 				ADB1531E25DA9EF4005AD592 /* FileTool.swift in Sources */,
 				ADB1532225DA9EF4005AD592 /* DeviceTool.swift in Sources */,
@@ -787,6 +841,7 @@
 		};
 		ADA28B0A25DA08CC00451852 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FD3501D681636503A8D4CEA /* Pods-MajiTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -806,6 +861,7 @@
 		};
 		ADA28B0B25DA08CC00451852 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DF7CEFF9D1ACBA5238E65A1 /* Pods-MajiTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

@@ -9,4 +9,5 @@ import Foundation
 class CurServerData: NSObject {
     static var shared = CurServerData()
     var dicData:[String:String] = [:]
+    var curDataDate:Date?
 }
